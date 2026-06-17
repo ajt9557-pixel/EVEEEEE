@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>for evee 🌸</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div id="bgPetals"></div>
+
+  <div id="confess">
+
+   
+    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3VzcWZ6OXFzbWxtaG40MnZpbTZmaG84aWFlZ25pNjdxeWJ5MTE3OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/2lU6tBOcpb7omfJz1z/giphy.gif" alt="hellokitty" class="corner-gif top-left" id="hk">
+    <img src="https://media.giphy.com/media/o7IzLgYnRqjAKBUEmL/giphy.gif" alt="cinnamonroll" class="corner-gif top-center" id="cinnamon">
+    <img src="https://media.giphy.com/media/JDD5yz5iGKPZTLOTU1/giphy.gif" alt="penguin" class="corner-gif top-right" id="peng">
+
+    
+    <img src="https://media.giphy.com/media/0ewXlZDMxpUtr6AOTg/giphy.gif" alt="happydance" class="corner-gif top-left" id="happy" style="display:none;">
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXNrbXRnaTYxZHg0YTd3ZTdzNm92dG5qcm8yM2dlODR3OTA5dHdibiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3o8dFvOoRM4PEfKOgo/giphy.gif" alt="cutecat" class="corner-gif top-right" id="cute" style="display:none;">
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXNrbXRnaTYxZHg0YTd3ZTdzNm92dG5qcm8yM2dlODR3OTA5dHdibiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/QbQeDAEspJ5oCeGWJk/giphy.gif" alt="cutecat2" class="corner-gif bottom-left" id="cute2" style="display:none;">
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXNrbXRnaTYxZHg0YTd3ZTdzNm92dG5qcm8yM2dlODR3OTA5dHdibiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/hgt1CzbIbHBvk9WILM/giphy.gif" alt="cutecat3" class="corner-gif bottom-right" id="cute3" style="display:none;">
+
+    
+    <div class="card-inner" id="mainContent">
+      <div class="petal-row">🌸✨💕✨🌸</div>
+      <h1 id="hello">hello evee<span class="wave">👋</span></h1>
+      <p class="conf-sub">i know i said this a lot but there's something i've been wanting to say for a while now. something that takes a little courage to admit. 🥺</p>
+      <p class="conf-question" id="question">do you like me?? 💌</p>
+
+      <div class="btn-row" id="btnRow">
+        <button id="startBtn" onclick="startSong()">▶ play music 🎵</button>
+        <div class="yn-row">
+          <button id="confessBtn" class="yes" onclick="showYes()">Yes 🌷</button>
+          <button class="no" id="noBtn" onmouseover="runAway()">No…</button>
+        </div>
+      </div>
+
+     
+      <div id="response" style="display:none;">
+        <div class="heart-burst">💖</div>
+        <div class="typed-box">
+          <p id="typed"></p>
+        </div>
+        <p id="revealSub" class="reveal-sub" style="opacity:0;">— from someone who yearns for you 🌸</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="popupMsg" style="display:none;">
+    <div class="popup-inner">
+      <span class="popup-emoji">🥺</span>
+      <p>hey don't click no!!</p>
+      <button id="closeBtn" onclick="document.getElementById('popupMsg').style.display='none'">okayyyy 🥺💕</button>
+    </div>
+  </div>
+
+  <audio id="myaudio" src="https://res.cloudinary.com/dno5z3pqa/video/upload/q_auto/f_auto/v1781320980/Kyle_Raphael_-_Libu-libong_buwan_uuwian_Official_Lyric_Video_ecy90z.mp3"></audio>
+  <audio id="myaudio2" src="https://res.cloudinary.com/dno5z3pqa/video/upload/q_auto/f_auto/v1781317043/FNAF_-_6_AM_sound_j8qfaj.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
